@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/delivery-app/auth_ms/issues"
   },
-  "homepage": "https://github.com/delivery-app/auth_ms#readme"
+  "homepage": "https://github.com/delivery-app/auth_ms#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
