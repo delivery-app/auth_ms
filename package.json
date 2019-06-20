@@ -1,0 +1,19 @@
+{
+  "name": "auth_ms",
+  "version": "1.0.0",
+  "description": "Authorization micro service for delivery app",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delivery-app/auth_ms.git"
+  },
+  "author": "Jose M. Ramirez R. and Cristhian C. Gomez N.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delivery-app/auth_ms/issues"
+  },
+  "homepage": "https://github.com/delivery-app/auth_ms#readme"
+}
