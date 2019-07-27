@@ -1,8 +1,5 @@
 import passport from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
-import { Strategy as JWTStrategy, ExtractJwt } from "passport-jwt";
-import secret from "../../../config/config";
-import { builtinModules } from "module";
 const request2 = require('request')
 
 passport.use(
@@ -11,7 +8,7 @@ passport.use(
       email: username,
       password_digest: password
     };
-    request2.post({ url: 'http://192.168.8.59:3000/user-api/users/check_user', headers: { 'content-type': 'application/json' }, body: JSON.stringify(json) }, (error, res2, body) => {
+    request2.post({ url: 'http://192.168.0.12:3000/user-api/users/check_user', headers: { 'content-type': 'application/json' }, body: JSON.stringify(json) }, (error, res2, body) => {
       if (error) {
         console.error(error)
         return
