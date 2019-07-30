@@ -1,7 +1,7 @@
 import { sign } from 'jsonwebtoken';
 const request = require('request');
 
-const registerUrl = 'http://192.168.0.12:3000/user-api/';
+const registerUrl = 'http://192.168.1.63:3002/user-api/';
 
 class RegisterApi {
   static finalUserJson(bodyData) {

@@ -1,6 +1,6 @@
 import RequestHelper from '../helpers/request_helper';
 
-const restaurantsUrl = 'http://192.168.0.12:3001/restaurants';
+const restaurantsUrl = 'http://192.168.1.63:3001/restaurants';
 
 class RestaurantsApi {
   static async getAllRestaurants(req, res) {
@@ -9,7 +9,7 @@ class RestaurantsApi {
       json: true // Automatically parses the JSON string in the response
     };
   
-    return RequestHelper.get(options, res);
+    return RequestHelper.restRequest(options, res);
   }
 
   static async getRestaurantProducts(req, res) {
@@ -19,7 +19,7 @@ class RestaurantsApi {
       json: true // Automatically parses the JSON string in the response
     };
   
-    return RequestHelper.get(options, res);
+    return RequestHelper.restRequest(options, res);
   }
 }
 

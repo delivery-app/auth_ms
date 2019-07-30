@@ -8,7 +8,7 @@ passport.use(
       email: username,
       password_digest: password
     };
-    request2.post({ url: 'http://192.168.0.12:3000/user-api/users/check_user', headers: { 'content-type': 'application/json' }, body: JSON.stringify(json) }, (error, res2, body) => {
+    request2.post({ url: 'http://192.168.1.63:3002/user-api/users/check_user', headers: { 'content-type': 'application/json' }, body: JSON.stringify(json) }, (error, res2, body) => {
       if (error) {
         console.error(error)
         return
